@@ -521,11 +521,6 @@ header .icon-sun {
     transform: rotate( 261deg)
 }
 
-.about .box-container {
-    /* display: flex;
-    justify-content: space-between; */
-}
-
 .about .box p {
     font-weight: normal;
     font-style: italic;
@@ -551,11 +546,11 @@ header .icon-sun {
 .skill-container {
     width: 100%;
     display: flex;
-    /* display: block; */
+    justify-content: space-between;
 }
 
 .skill .skill__left {
-    padding-right: 10rem;
+    /* padding-right: 10rem; */
     position: relative;
 }
 
@@ -1370,9 +1365,6 @@ header .icon-sun {
 /* media queries  */
 
 @media (max-width:991px) {
-    html {
-        /* font-size: 55%; */
-    }
     body {
         padding: 0;
     }
@@ -1393,7 +1385,6 @@ header .icon-sun {
         font-size: 1.6rem;
         padding: 1.8rem 0;
     }
-    header .navbar-left a {}
     .about .box-container {
         display: block;
         /* justify-content: space-between; */
