@@ -1017,6 +1017,7 @@ header .icon-sun {
 
 #project .title__header p {
     font-size: 8rem;
+    font-family: 'Roboto';
 }
 
 #project .tab-content {
@@ -1261,6 +1262,46 @@ header .icon-sun {
 
 
 /* end SAL */
+
+
+/* video countryside */
+
+.content_video_social {
+    text-align: center;
+    color: white;
+}
+
+.content_video_social p {
+    font-size: 3rem;
+}
+
+.content_video_social h2 {
+    font-size: 4.5rem;
+}
+
+.video__countryside {
+    width: 100%;
+    background-image: url(https://res.cloudinary.com/dvzingci9/image/upload/v1652302958/My-portfolio/bg_video_r60ewb.png);
+    background-size: cover;
+    /* giúp cho bakcgroun-img không scroll theo */
+    background-attachment: fixed;
+}
+
+.video_social {
+    padding: 10rem;
+    /* padding: 100px 0; */
+}
+
+.video_social video {
+    width: 100%;
+    object-fit: cover;
+    border: none;
+    box-shadow: 0 2px 10px 1px rgb(0 0 0 / 50%);
+    outline: none;
+}
+
+
+/* end videos countryside */
 
 
 /* start contact */
