@@ -1537,6 +1537,21 @@ header .icon-sun {
     #project .tab-content {
         padding: 2rem 2rem;
     }
+    .skill {
+        padding-top: 3rem;
+    }
+    .skill .skill__left .title h1 {
+        font-size: 7rem;
+    }
+    #experience .experience__container .experience__left h2 {
+        font-size: 4rem;
+    }
+    #experience h1 {
+        font-size: 6rem;
+    }
+    .favorite {
+        padding-top: 3rem;
+    }
 }
 
 @keyframes moveing {
