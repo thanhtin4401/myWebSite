@@ -46,7 +46,7 @@ body {
 
 section {
     padding: 1rem 5%;
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 
 a {
@@ -573,10 +573,11 @@ header .icon-sun {
 
 .skill .skill__right {
     padding: 10px 0;
+    width: 100%;
 }
 
 .skill .skill__item {
-    width: 60rem;
+    width: 100%;
     border-top: 0.2rem solid black;
     /* border-bottom: 0.2rem solid black; */
     padding: 1rem 0;
@@ -997,6 +998,11 @@ header .icon-sun {
     box-shadow: 0 2px 10px 1px rgb(0 0 0 / 50%);
 }
 
+.avak21__img {
+    border-radius: 30rem;
+    box-shadow: 0 2px 10px 1px rgb(0 0 0 / 50%);
+}
+
 
 /* start project */
 
@@ -1108,6 +1114,10 @@ header .icon-sun {
 
 /* design demo */
 
+#design {
+    background-color: #FCDA68;
+}
+
 #design .image-slider {
     width: 100%;
     padding-bottom: 50px;
@@ -1120,6 +1130,7 @@ header .icon-sun {
 
 #design h2:first-of-type {
     font-size: 4rem;
+    color: white;
 }
 
 #design span:first-of-type {
@@ -1128,7 +1139,7 @@ header .icon-sun {
     width: 40rem;
     height: 0.4rem;
     border-radius: 8rem;
-    background: gray;
+    background: white;
     margin-bottom: 2rem;
 }
 
@@ -1218,6 +1229,38 @@ header .icon-sun {
 
 
 /* end design demo */
+
+
+/* sofeware and languge */
+
+#SAL {
+    margin: 5rem 0;
+    height: auto;
+}
+
+#SAL .SAL__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#SAL .SAL__item {
+    /* background: black; */
+    border-radius: 50%;
+    width: 100%;
+    margin: 5rem;
+    box-shadow: 0 2px 10px 1px rgb(0 0 0 / 50%);
+}
+
+.sofeware__and__languge h1:first-of-type {
+    font-size: 4.5rem;
+}
+
+#SAL .SAL__item:hover {
+    transform: translateY(-3rem);
+}
+
+
+/* end SAL */
 
 
 /* start contact */
@@ -1521,6 +1564,12 @@ header .icon-sun {
     }
     #experience .box-video-experience {
         height: 35.3rem;
+    }
+    #SAL .SAL__container {
+        display: block;
+    }
+    #SAL .SAL__item {
+        margin: 3rem 0;
     }
 }
 
