@@ -1634,13 +1634,14 @@ header .icon-sun {
         width: 100%;
     }
     #experience .box-video-experience {
-        height: 35.3rem;
+        height: 100%;
     }
     #SAL .SAL__container {
         display: block;
     }
     #SAL .SAL__item {
         margin: 3rem 0;
+        pointer-events: none;
     }
     .video_social {
         padding: 1rem;
@@ -1653,6 +1654,16 @@ header .icon-sun {
     }
     .skill .skill__left img {
         display: none;
+    }
+    #project .item_content {
+        box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+        margin-bottom: 2rem;
+    }
+    #project .item_content .btnViewProjects {
+        border: 0.2rem dashed rgb(0 0 0 / 30%);
+    }
+    #project .btnSourceCode {
+        border: 0.2rem dashed rgb(0 0 0 / 30%);
     }
 }
 
