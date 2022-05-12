@@ -75,7 +75,7 @@ ex__btn_3.addEventListener('click', () => {
 })
 
 
-
+// pic
 $(document).ready(function () {
     $(".image-slider").slick({
         slidesToShow: 4,
@@ -105,3 +105,5 @@ $(document).ready(function () {
         // autoplaySpeed: 1000,
     });
 });
+
+// lable

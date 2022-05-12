@@ -1049,12 +1049,28 @@ header .icon-sun {
     border-top-color: white;
 }
 
-#project .item_content .btnViewProjects {
+#project .btn__container {
     width: 100%;
+    display: flex;
+}
+
+#project .item_content .btnViewProjects {
+    width: 65%;
     padding: 0.8rem;
     font-size: 2rem;
     border-radius: 4rem;
+    margin-right: 1rem;
     background-color: transparent;
+    border: 0.2rem dashed rgb(0, 0, 0, 0);
+    animation: 10s ease-out;
+}
+
+#project .btnSourceCode {
+    width: 25%;
+    border-radius: 8rem;
+    background: transparent;
+    font-size: 1.5rem;
+    margin-left: 1rem;
     border: 0.2rem dashed rgb(0, 0, 0, 0);
     animation: 10s ease-out;
 }
@@ -1073,6 +1089,11 @@ header .icon-sun {
 }
 
 #project .item_content:hover .btnViewProjects {
+    letter-spacing: .2rem;
+    border: 0.2rem dashed black;
+}
+
+#project .item_content:hover .btnSourceCode {
     letter-spacing: .2rem;
     border: 0.2rem dashed black;
 }
@@ -1636,9 +1657,6 @@ header .icon-sun {
 }
 
 @media (max-width:450px) {
-    html {
-        /* font-size: 50%; */
-    }
     header {
         width: 100%;
     }
