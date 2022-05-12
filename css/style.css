@@ -1713,6 +1713,12 @@ header .icon-sun {
     #project .btnSourceCode {
         border: 0.2rem dashed rgb(0 0 0 / 30%);
     }
+    .about .row-1 {
+        display: block;
+    }
+    .about .row-1 .content img {
+        display: none;
+    }
 }
 
 @media (max-width:450px) {
