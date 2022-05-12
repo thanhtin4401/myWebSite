@@ -103,7 +103,7 @@ body::-webkit-scrollbar-track {
     padding-bottom: 1rem;
     color: #111;
     text-transform: uppercase;
-    font-size: 7rem;
+    font-size: 6rem;
     font-weight: 500;
     line-height: 10rem;
 }
@@ -111,7 +111,7 @@ body::-webkit-scrollbar-track {
 .heading span {
     color: black;
     text-transform: uppercase;
-    font-size: 7rem;
+    font-size: 6rem;
     font-weight: 500;
     line-height: 10rem;
 }
@@ -348,7 +348,7 @@ header .icon-sun {
 /* start home */
 
 .home {
-    background-image: url(../images/bg14.png);
+    background-image: url(https://res.cloudinary.com/dvzingci9/image/upload/v1652300886/My-portfolio/bg14_ncz0zp.png);
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -357,6 +357,7 @@ header .icon-sun {
     /* background-position: top; */
     background-size: contain;
     margin-bottom: 8rem;
+    margin-top: 5rem;
 }
 
 .home .image {
@@ -719,7 +720,7 @@ header .icon-sun {
 .skill .explore__content:before {
     content: "";
     position: absolute;
-    width: 55rem;
+    width: 60%;
     height: 0.1rem;
     top: 0;
     background: rgba(94, 94, 94, 0.8);
@@ -770,6 +771,7 @@ header .icon-sun {
 .favorite {
     background: #FCDA68;
     padding-top: 8rem;
+    padding-bottom: 8rem;
 }
 
 .favorite .fav_left .title {
@@ -781,9 +783,9 @@ header .icon-sun {
 }
 
 .favorite .favorite__container .title h1 {
-    font-size: 8rem;
-    font-weight: 500;
-    line-height: 10rem;
+    font-size: 6rem;
+    font-weight: 600;
+    line-height: 8rem;
 }
 
 .favorite .favorite__container .title p {
@@ -1016,7 +1018,8 @@ header .icon-sun {
 }
 
 #project .title__header p {
-    font-size: 8rem;
+    font-size: 6rem;
+    font-weight: 600;
     font-family: 'Roboto';
 }
 
@@ -1249,7 +1252,10 @@ header .icon-sun {
     border-radius: 50%;
     width: 100%;
     margin: 5rem;
-    box-shadow: 0 2px 10px 1px rgb(0 0 0 / 50%);
+    border-radius: 50%;
+    background: transparent;
+    padding: 1rem;
+    border: 0.3rem dashed black;
 }
 
 .sofeware__and__languge h1:first-of-type {
@@ -1258,6 +1264,7 @@ header .icon-sun {
 
 #SAL .SAL__item:hover {
     transform: translateY(-3rem);
+    box-shadow: 0 2px 10px 1px rgb(0 0 0 / 50%);
 }
 
 
@@ -1596,9 +1603,11 @@ header .icon-sun {
     }
     #experience .experience__left {
         width: 100%;
+        margin-bottom: 4rem;
     }
     #experience .experience__right {
         width: 100%;
+        margin-bottom: 4rem;
     }
     .home .image .front-img {
         width: 100%;
@@ -1611,6 +1620,18 @@ header .icon-sun {
     }
     #SAL .SAL__item {
         margin: 3rem 0;
+    }
+    .video_social {
+        padding: 1rem;
+    }
+    .content_video_social h2 {
+        font-size: 2.5rem;
+    }
+    .content_video_social p {
+        font-size: 1rem;
+    }
+    .skill .skill__left img {
+        display: none;
     }
 }
 
@@ -1631,7 +1652,8 @@ header .icon-sun {
         padding-top: 3rem;
     }
     .skill .skill__left .title h1 {
-        font-size: 7rem;
+        font-size: 6rem;
+        line-height: 8rem;
     }
     #experience .experience__container .experience__left h2 {
         font-size: 4rem;
