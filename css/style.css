@@ -1,22 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 :root {
-    --main-color: #2670BF;
-    --main-color-1: #2670BF;
-    --main-color-2: #41B9D6;
-    --white-color: #fff;
-    --white-medium-color: rgb(230, 230, 230);
-    --black-bold-color: #000;
-    --black-medium-color: #666;
+    --body-color: #fcf2e8;
+    --main-color: #fbda68;
+    --text-yellow-color: #fbda68;
+    --text-black-color-bold: #121212;
+    --black-color: #121212;
+    --white-color: white;
+    --text-black-color-normal: #666666;
+    --background-yellow-color: #fbda68;
+    --border-gray-color: #666666;
+    --border-black-color: black;
 }
 
-
-/* 
 .dark_theme {
-    --white-color: #000;
-    --white-medium-color: #666;
-    --black-bold-color: #fff;
-    --black-medium-color: rgb(230, 230, 230);
-} */
+    --body-color: #292929;
+    --main-color: #1F1F1F;
+    --text-yellow-color: #fbda68;
+    --text-black-color-bold: white;
+    --black-color: white;
+    --white-color: black;
+    --text-black-color-normal: #e7e7e7;
+    --background-yellow-color: #fbda68;
+    --border-gray-color: #e7e7e7;
+    --border-black-color: white;
+}
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -31,6 +38,10 @@
     /* max-width: 100%!important; */
 }
 
+p {
+    color: var(--text-black-color-normal);
+}
+
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -38,9 +49,12 @@ html {
 }
 
 body {
-    /* background: #fcf2e8; */
-    /* background: black; */
+    background: var(--body-color);
     padding-left: 30rem;
+}
+
+body.dark_theme {
+    background: var(--body-color);
 }
 
 section {
@@ -65,14 +79,14 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-    background: #fbda68;
-    border: 2px solid black;
+    background: var(--main-color);
+    border: 2px solid var(--border-black-color);
     border-radius: 8rem;
 }
 
 body::-webkit-scrollbar-track {
-    /* border: 2px solid black; */
-    background: white;
+    /* border: 2px solid var(--border-black-color); */
+    background: black;
 }
 
 .btns {
@@ -80,8 +94,9 @@ body::-webkit-scrollbar-track {
     border: .2rem solid #6e6c64;
     margin-top: 1rem;
     padding: .8rem 3rem;
-    color: rgb(99, 99, 99);
+    color: var(--text-black-color-normal);
     cursor: pointer;
+    text-transform: capitalize;
     font-size: 2rem;
     border-radius: 8rem;
     text-decoration: none;
@@ -91,8 +106,8 @@ body::-webkit-scrollbar-track {
 
 .btns:hover {
     letter-spacing: .2rem;
-    color: black;
-    border: .2rem solid black;
+    color: var(--black-color);
+    border: .2rem solid var(--border-black-color);
 }
 
 
@@ -100,7 +115,7 @@ body::-webkit-scrollbar-track {
 
 .heading {
     padding-bottom: 1rem;
-    color: #111;
+    color: var(--black-color);
     text-transform: uppercase;
     font-size: 6rem;
     font-weight: 500;
@@ -109,7 +124,6 @@ body::-webkit-scrollbar-track {
 
 .heading span {
     color: #fbda68;
-    ;
     text-transform: uppercase;
     font-size: 6rem;
     font-weight: 500;
@@ -122,7 +136,7 @@ header {
     left: 0;
     bottom: 0;
     /* background: #222; */
-    background-color: #fbda68;
+    background-color: var(--main-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -132,6 +146,10 @@ header {
     width: 30rem;
     text-align: center;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+body.dark_theme header {
+    box-shadow: rgba(247, 247, 247, 0.25) 0px 6px 12px -2px, rgba(255, 255, 255, 0.3) 0px 3px 7px -3px;
 }
 
 header .logo img {
@@ -151,7 +169,7 @@ header .navbar-left {
 header .navbar-left a {
     display: block;
     font-size: 2rem;
-    color: black;
+    color: var(--black-color);
     /* margin: 2rem 0; */
     padding: 2rem 0;
     text-decoration: none;
@@ -170,7 +188,7 @@ header .navbar-left a::before {
     top: 0;
     left: 0;
     z-index: -1;
-    border: 0.2rem dashed black;
+    border: 0.2rem dashed var(--border-black-color);
     transition: all 0.3s ease;
 } */
 
@@ -181,7 +199,6 @@ header .navbar-left a::before {
 
 header .navbar-left a:hover {
     letter-spacing: .2rem;
-    /* color: white; */
     font-weight: 600;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -194,10 +211,11 @@ header .follow a {
     font-size: 3rem;
     color: var(--black-color);
     margin: 0 .7rem;
+    text-decoration: none;
 }
 
 header .follow a:hover {
-    color: var(--main-color-1);
+    color: var(--main-color);
 }
 
 #menu-bars {
@@ -205,9 +223,7 @@ header .follow a:hover {
     top: 1rem;
     right: 1rem;
     z-index: 10000;
-    /* background: black; */
-    /* color: var(--white-color); */
-    color: black;
+    color: var(--black-color);
     border: 0.2rem solid;
     border-radius: .5rem;
     padding: 1rem 1.5rem;
@@ -229,15 +245,15 @@ header .checkbox {
 
 header .checkbox:checked+.lable .ball {
     transform: translateX(29px);
-    background-color: #111;
+    background-color: var(--black-color);
 }
 
 header .checkbox:checked+.lable {
-    background-color: #fff;
+    background-color: var(--white-color);
 }
 
 header .lable {
-    background-color: #111;
+    background-color: var(--black-color);
     height: 32px;
     width: 60px;
     display: flex;
@@ -251,7 +267,7 @@ header .ball {
     height: 24px;
     width: 24px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: var(--white-color);
     position: absolute;
     top: 4px;
     left: 4px;
@@ -282,7 +298,7 @@ header .icon-sun {
     left: 0;
     height: 1rem;
     width: 1rem;
-    background: black;
+    background: var(--black-color);
     pointer-events: none;
     transform: translate(-50%, -50%);
     border-radius: 50%;
@@ -301,7 +317,7 @@ header .icon-sun {
     left: 0;
     height: 4rem;
     width: 4rem;
-    border: .1rem solid black;
+    border: .1rem solid var(--border-black-color);
     pointer-events: none;
     transform: translate(-50%, -50%);
     border-radius: 50%;
@@ -359,6 +375,10 @@ header .icon-sun {
     background-size: contain;
     margin-bottom: 8rem;
     margin-top: 5rem;
+}
+
+body.dark_theme .home {
+    background-image: url(https://res.cloudinary.com/dvzingci9/image/upload/v1652450173/My-portfolio/bg14-dark_uwwzsx.png);
 }
 
 .home .image {
@@ -431,12 +451,12 @@ header .icon-sun {
 
 .home .content .hi {
     font-size: 2.5rem;
-    color: black;
+    color: var(--text-black-color-bold);
 }
 
 .home .content h3 {
     font-size: 6rem;
-    color: #111;
+    color: var(--text-black-color-bold);
     text-transform: uppercase;
 }
 
@@ -447,13 +467,13 @@ header .icon-sun {
 
 .home .content .info {
     font-size: 3.5rem;
-    color: #111;
+    color: var(--text-black-color-bold);
     padding: .5rem 0;
 }
 
 .home .content .text {
     font-size: 2rem;
-    color: #666;
+    color: var(--text-black-color-normal);
     padding: .5rem 0;
 }
 
@@ -485,7 +505,7 @@ header .icon-sun {
 
 .about .row-1 .image {
     flex: 1 1 25rem;
-    border: 0.2rem dashed black;
+    border: 0.2rem dashed var(--border-black-color);
     padding: 3.5rem 4.5rem;
     border-radius: 8rem;
     height: 100%;
@@ -495,7 +515,7 @@ header .icon-sun {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    border: 0.2rem solid black;
+    border: 0.2rem solid var(--border-black-color);
     border-radius: 8rem;
 }
 
@@ -504,13 +524,13 @@ header .icon-sun {
 }
 
 .about .row-1 .content h3 {
-    color: #333;
+    color: var(--text-black-color-normal);
     font-size: 3.5rem;
     text-transform: capitalize;
 }
 
 .about .row-1 .content p {
-    color: #666;
+    color: var(--text-black-color-normal);
     font-size: 1.7rem;
     padding: .2rem 0;
     font-style: italic;
@@ -543,7 +563,7 @@ header .icon-sun {
 /* start my skill */
 
 .skill {
-    background: #FCDA68;
+    background: var(--main-color);
     padding-top: 8rem;
 }
 
@@ -566,6 +586,7 @@ header .icon-sun {
     font-size: 8rem;
     font-weight: 500;
     line-height: 10rem;
+    color: var(--text-black-color-bold);
 }
 
 .skill .skill__left img {
@@ -582,8 +603,8 @@ header .icon-sun {
 
 .skill .skill__item {
     width: 100%;
-    border-top: 0.2rem solid black;
-    /* border-bottom: 0.2rem solid black; */
+    border-top: 0.2rem solid var(--border-black-color);
+    /* border-bottom: 0.2rem solid var(--border-black-color); */
     padding: 1rem 0;
     /* margin-bottom: 2rem; */
     position: relative;
@@ -593,6 +614,7 @@ header .icon-sun {
     font-size: 5rem;
     font-weight: 500;
     line-height: 6rem;
+    color: var(--text-black-color-bold);
 }
 
 .skill .skill__item h2 p {
@@ -600,6 +622,7 @@ header .icon-sun {
     font-weight: 400;
     margin-top: 3rem;
     margin-bottom: 4rem;
+    color: var(--text-black-color-bold);
 }
 
 .skill__item__header {
@@ -610,6 +633,7 @@ header .icon-sun {
     line-height: 4rem;
     font-size: 2rem;
     margin-right: 2rem;
+    color: var(--text-black-color-bold);
 }
 
 .skill .skill__left .title div {
@@ -619,7 +643,7 @@ header .icon-sun {
 .skill .retangle {
     width: 8rem;
     height: 0.3rem;
-    background: black;
+    background: var(--black-color);
     /* padding-right: 3rem; */
     margin-right: 4rem;
     border-radius: 7rem;
@@ -632,6 +656,7 @@ header .icon-sun {
     padding-right: 8rem;
     font-size: 1.2rem;
     opacity: 0.6;
+    color: var(--text-black-color-normal);
 }
 
 
@@ -654,24 +679,24 @@ header .icon-sun {
     bottom: 4rem;
     right: 0;
     z-index: 1;
-    background: black;
+    background: var(--black-color);
     animation: 0.4 ease
 }
 
 .skill .btn__explore i {
-    color: white;
+    color: var(--white-color);
     font-size: 1.5rem;
     line-height: 5.2rem;
 }
 
 .skill .btn__explore:hover {
     transform: translateY(1rem);
-    background: white;
+    background: var;
 }
 
 .skill .btn__explore:hover i {
     transform: translateY(0.3rem);
-    color: black;
+    color: var(--black-color);
 }
 
 
@@ -685,13 +710,13 @@ header .icon-sun {
     bottom: 4rem;
     right: 0;
     z-index: 1;
-    background: black;
+    background: var(--black-color);
     /* transform: rotate( 179deg); */
     animation: 0.4 ease
 }
 
 .skill .skill__item.active .btn__explore i {
-    color: white;
+    color: var(--white-color);
     font-size: 1.5rem;
     line-height: 5.2rem;
     transform: rotate( 179deg);
@@ -699,12 +724,12 @@ header .icon-sun {
 
 .skill .skill__item.active .btn__explore:hover {
     transform: translateY(-1rem);
-    background: white;
+    background: var;
 }
 
 .skill .skill__item.active .btn__explore:hover i {
     transform: translateY(-0.3rem);
-    color: black;
+    color: var(--black-color);
     transform: rotate( 179deg);
 }
 
@@ -731,6 +756,7 @@ header .icon-sun {
 
 .skill .explore__content h3 {
     font-size: 2.5rem;
+    color: var(--text-black-color-bold);
 }
 
 .skill .explore__content p {
@@ -739,16 +765,17 @@ header .icon-sun {
 
 .skill .explore__content span {
     font-size: 1.5rem;
+    color: var(--text-black-color-bold);
     display: block;
 }
 
 .skill .explore__content a {
     font-size: 1.5rem;
     font-weight: 400;
-    color: black;
+    color: var(--black-color);
     padding: 1rem 1rem;
     display: inline-block;
-    border: 0.2rem solid black;
+    border: 0.2rem solid var(--border-black-color);
     border-radius: 7rem;
     margin-top: 1rem;
 }
@@ -772,7 +799,7 @@ header .icon-sun {
 /* start favorite */
 
 .favorite {
-    background: #FCDA68;
+    background: var(--main-color);
     padding-top: 8rem;
     padding-bottom: 8rem;
 }
@@ -782,12 +809,13 @@ header .icon-sun {
     width: 50rem;
     margin-bottom: 2rem;
     padding-bottom: 2rem;
-    border-bottom: 0.2rem solid black;
+    border-bottom: 0.2rem solid var(--border-black-color);
 }
 
 .favorite .favorite__container .title h1 {
     font-size: 6rem;
     font-weight: 600;
+    color: var(--text-black-color-bold);
     line-height: 8rem;
 }
 
@@ -807,6 +835,7 @@ header .icon-sun {
 
 .favorite .fav__content .fav__item p {
     font-size: 2.5rem;
+    color: var(--text-black-color-bold);
 }
 
 .favorite .fav__content .fav__item p i {
@@ -817,14 +846,14 @@ header .icon-sun {
     width: auto;
     display: block;
     padding: 1.5rem;
-    border: 0.2rem solid black;
+    border: 0.2rem solid var(--border-black-color);
     border-radius: 7rem;
     margin: 1rem 0;
     text-align: center;
 }
 
 .favorite .fav__content .fav__item:hover {
-    /* color: white; */
+    /* color: var(--white-color); */
     letter-spacing: .2rem;
 }
 
@@ -937,6 +966,7 @@ header .icon-sun {
 
 #experience h1 {
     font-size: 8rem;
+    color: var(--text-black-color-bold);
 }
 
 #experience .experience__container {
@@ -944,7 +974,7 @@ header .icon-sun {
     justify-content: space-between;
     align-items: center;
     padding: 5rem 0;
-    border-bottom: 0.2rem solid gray;
+    border-bottom: 0.2rem solid var(--border-gray-color);
 }
 
 #experience .experience__container:last-child {
@@ -957,11 +987,12 @@ header .icon-sun {
 
 #experience .experience__container .experience__left h2 {
     font-size: 5rem;
+    color: var(--text-black-color-bold);
 }
 
 #experience .experience__container .experience__left p {
     font-size: 1.4rem;
-    color: gray;
+    color: var(--text-black-color-normal);
 }
 
 #experience .experience__container .experience__left span {
@@ -977,7 +1008,7 @@ header .icon-sun {
 #experience .experience__container .experience__left .retangle {
     width: 8rem;
     height: 0.3rem;
-    background: black;
+    background: var(--black-color);
     /* padding-right: 3rem; */
     margin-right: 4rem;
     border-radius: 7rem;
@@ -1024,6 +1055,7 @@ header .icon-sun {
     font-size: 6rem;
     font-weight: 600;
     font-family: 'Roboto';
+    color: var(--text-black-color-bold);
 }
 
 #project .tab-content {
@@ -1037,7 +1069,8 @@ header .icon-sun {
     text-align: center;
     cursor: pointer;
     padding: 2rem 2em;
-    border: 0.2rem solid #a0a0a000;
+    border: 0.2rem solid #a0a0a0;
+    margin-bottom: 4rem;
     transition: 0.5s ease;
 }
 
@@ -1049,7 +1082,7 @@ header .icon-sun {
     padding: 15px 0px;
     margin-top: 2rem;
     border-radius: 16px;
-    border-top-color: white;
+    border-top-color: var(--white-color);
 }
 
 #project .btn__container {
@@ -1062,6 +1095,7 @@ header .icon-sun {
     padding: 0.8rem;
     font-size: 2rem;
     border-radius: 4rem;
+    color: var(--text-black-color-bold);
     margin-right: 1rem;
     background-color: transparent;
     border: 0.2rem dashed rgb(0, 0, 0, 0);
@@ -1073,6 +1107,7 @@ header .icon-sun {
     border-radius: 8rem;
     background: transparent;
     font-size: 1.5rem;
+    color: var(--text-black-color-bold);
     margin-left: 1rem;
     border: 0.2rem dashed rgb(0, 0, 0, 0);
     animation: 10s ease-out;
@@ -1080,6 +1115,7 @@ header .icon-sun {
 
 #project .item_content .title h5 {
     font-size: 2rem;
+    color: var(--text-black-color-bold)
 }
 
 #project .display-4 {
@@ -1091,14 +1127,20 @@ header .icon-sun {
     border: 0.2rem solid #3a3a3a33;
 }
 
+body.dark_theme #project .item_content:hover {
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    border: 0.2rem solid #3a3a3a33;
+    background: #00000036;
+}
+
 #project .item_content:hover .btnViewProjects {
     letter-spacing: .2rem;
-    border: 0.2rem dashed black;
+    border: 0.2rem dashed var(--border-black-color);
 }
 
 #project .item_content:hover .btnSourceCode {
     letter-spacing: .2rem;
-    border: 0.2rem dashed black;
+    border: 0.2rem dashed var(--border-black-color);
 }
 
 #project .tab-content {
@@ -1116,10 +1158,20 @@ header .icon-sun {
 #project .nav-tabs .nav-link.active {
     color: #fbda68;
     border-top-left-radius: 2.75rem;
+    border-color: var(--text-black-color-bold);
+    border-bottom-color: var(--body-color);
+}
+
+.nav-tabs .nav-link:hover {
+    border-color: var(--text-black-color-normal);
+}
+
+#project .nav-tabs {
+    border-bottom: 1px solid var(--text-black-color-bold);
 }
 
 #project a {
-    color: #383838;
+    color: var(--text-black-color-bold);
     text-decoration: none;
     background-color: transparent;
 }
@@ -1134,7 +1186,7 @@ header .icon-sun {
 /* end video */
 
 #video .video__item {
-    background-color: gray;
+    background-color: var(--text-black-color-normal);
     margin: 0 2rem;
     /* width: 100%; */
 }
@@ -1143,7 +1195,7 @@ header .icon-sun {
 /* design demo */
 
 #design {
-    background-color: #FCDA68;
+    background-color: var(--main-color);
 }
 
 #design .image-slider {
@@ -1210,14 +1262,14 @@ header .icon-sun {
     line-height: 1;
     z-index: 5;
     border: 0.2rem dashed;
-    color: black;
+    color: var(--black-color);
     background: transparent;
     transition: all 0.2s linear;
 }
 
 .slick-arrow:hover {
-    color: white;
-    border-color: white;
+    color: var(--white-color);
+    border-color: var(--white-color);
 }
 
 .slick-prev {
@@ -1252,7 +1304,7 @@ header .icon-sun {
 }
 
 .slick-dots .slick-active button {
-    background-color: gray;
+    background-color: var(--text-black-color-normal);
 }
 
 
@@ -1272,18 +1324,19 @@ header .icon-sun {
 }
 
 #SAL .SAL__item {
-    /* background: black; */
+    /* background: var(--black-color); */
     border-radius: 50%;
     width: 100%;
     margin: 5rem;
     border-radius: 50%;
     background: transparent;
     padding: 1rem;
-    border: 0.3rem dashed black;
+    border: 0.3rem dashed var(--border-black-color);
 }
 
 .sofeware__and__languge h1:first-of-type {
     font-size: 4.5rem;
+    color: var(--text-black-color-bold);
 }
 
 #SAL .SAL__item:hover {
@@ -1299,15 +1352,17 @@ header .icon-sun {
 
 .content_video_social {
     text-align: center;
-    color: white;
+    color: var(--white-color);
 }
 
 .content_video_social p {
     font-size: 3rem;
+    color: white;
 }
 
 .content_video_social h2 {
     font-size: 4.5rem;
+    color: white;
 }
 
 .video__countryside {
@@ -1338,13 +1393,13 @@ header .icon-sun {
 /* start contact */
 
 #contact {
-    background: #fbda68;
+    background: var(--main-color);
     padding-top: 5rem;
     padding-bottom: 2rem;
 }
 
 #contact .icons {
-    border: 0.2rem dashed;
+    border: 0.2rem dashed var(--text-black-color-bold);
 }
 
 .contact .icons-container {
@@ -1367,13 +1422,12 @@ header .icon-sun {
     line-height: 5rem;
     font-size: 2rem;
     background: rgb(75 78 80);
-    ;
-    color: var(--white-color);
+    color: white;
     border-radius: 50%;
 }
 
 .contact .icons-container .icons h3 {
-    color: #111;
+    color: var(--black-color);
     font-size: 2rem;
     padding: .5rem 0;
     padding-top: 1rem;
@@ -1381,7 +1435,7 @@ header .icon-sun {
 }
 
 .contact .icons-container .icons p {
-    color: rgb(76 78 80);
+    color: var(--text-black-color-normal);
     font-size: 1.7rem;
 }
 
@@ -1403,7 +1457,7 @@ header .icon-sun {
 
 .contact .row .map {
     flex: 1 1 25rem;
-    border: 0.2rem dashed;
+    border: 0.2rem dashed var(--text-black-color-bold);
     padding: 2rem;
     border-radius: .5rem;
     width: 100%;
@@ -1412,8 +1466,8 @@ header .icon-sun {
 .contact .row form .box,
 .contact .row form textarea {
     width: 100%;
-    border-bottom: .1rem solid #333;
-    color: #333;
+    border-bottom: .1rem solid var(--border-black-color);
+    color: var(--text-black-color-normal);
     background: transparent;
     text-transform: none;
     font-size: 1.7rem;
@@ -1451,25 +1505,26 @@ header .icon-sun {
 .form__control input {
     background-color: transparent;
     border: 0;
-    border-bottom: 2px #fff solid;
+    border-bottom: 2px var(--white-color) solid;
     display: block;
     width: 100%;
     padding: 15px 0;
     font-size: 18px;
-    color: #fff;
+    color: var(--white-color);
 }
 
 .form__control input:focus,
 .form__control input:valid {
     outline: 0;
-    border-bottom-color: lightblue;
+    /* border-bottom-color: lightblue; */
 }
 
 .form__control label {
     position: absolute;
     top: 15px;
     left: 0;
-    color: #8080805e;
+    color: var(--text-black-color-normal);
+    opacity: 0.5;
 }
 
 .form__control label span {
@@ -1481,7 +1536,7 @@ header .icon-sun {
 
 .form__control input:focus+label span,
 .form__control input:valid+label span {
-    color: black;
+    color: var(--black-color);
     transform: translateY(-30px);
 }
 
@@ -1498,7 +1553,7 @@ header .icon-sun {
 #contact .later .later__left,
 #contact .later .later__right {
     width: 24rem;
-    border-top: 0.2rem solid black;
+    border-top: 0.2rem solid var(--border-black-color);
     padding-top: 1rem;
     font-size: 1rem;
 }
