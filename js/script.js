@@ -173,7 +173,7 @@ checkboxDarkMode.addEventListener('click', () => {
         document.querySelector('.skill .skill-container img').src = "https://res.cloudinary.com/dvzingci9/image/upload/v1652300903/My-portfolio/picVAP_m0q8ij.png";
 
         // imgage about me
-        document.querySelector('.about .row-1 .imgage img').src = "https://res.cloudinary.com/dvzingci9/image/upload/v1652300907/My-portfolio/img__infor_cj1ncf.jpg";
+        document.querySelector('.about .row-1 .image img').src = "https://res.cloudinary.com/dvzingci9/image/upload/v1652300907/My-portfolio/img__infor_cj1ncf.jpg";
 
         // about taget
         document.querySelector('.about .row-1 .content img').src = "https://res.cloudinary.com/dvzingci9/image/upload/v1652300891/My-portfolio/dc2_wquo4x.png";
