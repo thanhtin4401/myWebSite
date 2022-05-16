@@ -13,6 +13,7 @@
     --border-gray-color: #666666;
     --border-black-color: black;
     --text-black-dont-chance: black;
+    /* --background-yellow-blod:#ffc107; */
 }
 
 
@@ -30,6 +31,7 @@
     --background-yellow-color: #fbda68;
     --border-gray-color: #e7e7e7;
     --border-black-color: white;
+    --background-yellow-color: #ffc107;
 }
 
 * {
@@ -130,9 +132,9 @@ body::-webkit-scrollbar-track {
 }
 
 .heading span {
-    color: var(--body-color);
+    color: var(--text-black-color-bold);
     text-transform: uppercase;
-    font-size: 6rem;
+    font-size: 4.5rem;
     font-weight: 500;
     line-height: 10rem;
 }
@@ -394,7 +396,7 @@ header .icon-sun {
     height: 100%;
     position: absolute;
     top: 0;
-    left: 30rem;
+    /* left: 30rem; */
     /* z-index: -1; */
     background: var(--background-gradient);
 }
@@ -484,7 +486,7 @@ body.dark_theme .home {
 }
 
 .home .content h3 span {
-    color: #fbda68;
+    color: var(--background-yellow-color);
     text-transform: uppercase;
 }
 
@@ -1173,6 +1175,11 @@ body.dark_theme #experience .timeline-date {
     font-size: 1.5rem;
     font-weight: 400;
     color: var(--text-black-dont-chance);
+}
+
+#experience .timeline-item .timeline-content img {
+    width: 100%;
+    border-radius: 8px;
 }
 
 

@@ -131,7 +131,7 @@ checkboxDarkMode.addEventListener('click', () => {
         <img class="animate__animated animate__fadeInRight clound-right animate__delay-1s" src="https://res.cloudinary.com/dvzingci9/image/upload/v1652513746/My-portfolio/clound-moon_peb6rn.png" alt="">`
 
         // inmg home
-        document.querySelector('#home .image').innerHTML = ` <img src="https://res.cloudinary.com/dvzingci9/image/upload/v1652513749/My-portfolio/me_attdm8.png" alt="" class="front-img">
+        document.querySelector('#home .image').innerHTML = ` <img src="https://res.cloudinary.com/dvzingci9/image/upload/v1652689481/My-portfolio/me_attdm8_jjqfny.png" alt="" class="front-img">
         <img src="https://res.cloudinary.com/dvzingci9/image/upload/v1652448395/My-portfolio/dc1-dark_wzz4e6.png" alt="" class="dc1">
         <img src="https://res.cloudinary.com/dvzingci9/image/upload/v1652448395/My-portfolio/dc2-dark_yxecil.png" alt="" class="dc2">
         <img src="https://res.cloudinary.com/dvzingci9/image/upload/v1652448395/My-portfolio/dc2-dark_yxecil.png" alt="" class="dc3">`
