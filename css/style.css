@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
 :root {
     --body-color: #fcf2e8;
-    --background-gradient: linear-gradient(90deg, rgba(252, 242, 232, 1) 30%, rgba(0, 212, 255, 0) 100%);
+    --background-gradient: linear-gradient(90deg, rgba(252, 242, 232, 1) 30%, hsla(190, 100%, 50%, 0) 100%);
     --main-color: #fbda68;
     --text-yellow-color: #fbda68;
     --text-black-color-bold: #121212;
@@ -21,7 +21,7 @@
 
 .dark_theme {
     --body-color: #292929;
-    --background-gradient: linear-gradient(90deg, rgba(41, 41, 41, 0.938813025210084) 38%, rgba(0, 212, 255, 0) 100%);
+    --background-gradient: linear-gradient(90deg, #292929ef 38%, #00d4ff00 100%);
     --main-color: #1F1F1F;
     --text-yellow-color: #fbda68;
     --text-black-color-bold: white;
@@ -179,10 +179,15 @@ header .navbar-left a {
     display: block;
     font-size: 2rem;
     color: var(--black-color);
-    margin: 1rem 0;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     text-decoration: none;
     position: relative;
+    text-align: left;
+    padding-left: 8rem;
+}
+
+header .navbar-left a i {
+    margin-right: 2rem;
 }
 
 
@@ -207,6 +212,46 @@ header .navbar-left a::before {
 } */
 
 header .navbar-left a:hover {
+    letter-spacing: .2rem;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: var(--main-color);
+    background: var(--body-color);
+    border-top-left-radius: 8rem;
+    border-bottom-left-radius: 8rem;
+}
+
+header .navbar-left a.activeNAV {
+    letter-spacing: .2rem;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: var(--main-color);
+    background: var(--body-color);
+    border-top-left-radius: 8rem;
+    border-bottom-left-radius: 8rem;
+}
+
+body.dark_theme header .navbar-left a:hover {
+    letter-spacing: .2rem;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: black;
+    background: white;
+    border-top-left-radius: 8rem;
+    border-bottom-left-radius: 8rem;
+}
+
+body.dark_theme header .navbar-left a.activeNAV {
+    letter-spacing: .2rem;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: black;
+    background: white;
+    border-top-left-radius: 8rem;
+    border-bottom-left-radius: 8rem;
+}
+
+header .navbar-left.active a {
     letter-spacing: .2rem;
     font-weight: 600;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -347,6 +392,8 @@ header .icon-sun {
 
 .clound {
     height: 10rem;
+    width: 100%;
+    top: 0;
     position: relative;
 }
 
@@ -375,7 +422,7 @@ header .icon-sun {
 
 /* start home */
 
-.home {
+#home.home {
     background-image: url(https://res.cloudinary.com/dvzingci9/image/upload/v1652300886/My-portfolio/bg14_ncz0zp.png);
     display: flex;
     align-items: center;
@@ -384,10 +431,9 @@ header .icon-sun {
     overflow: hidden;
     /* background-position: top; */
     background-size: cover;
-    /* background-repeat: no-repeat; */
-    margin-bottom: 8rem;
     position: relative;
-    margin-top: 5rem;
+    padding-bottom: 5rem;
+    /* margin-top: 5rem; */
 }
 
 #home .overlay {
@@ -408,7 +454,8 @@ body.dark_theme .home {
 .home .image {
     flex: 1 1 40rem;
     /* width: 100%; */
-    position: relative
+    position: relative;
+    margin-top: 10rem;
 }
 
 .home .image .front-img {
@@ -472,6 +519,7 @@ body.dark_theme .home {
 .home .content {
     flex: 1 1 40rem;
     position: relative;
+    margin-top: 10rem;
 }
 
 .home .content .hi {
@@ -1162,12 +1210,13 @@ body.dark_theme #experience .timeline-date {
     background-color: var(--background-yellow-color);
     padding: 30px;
     border-radius: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 #experience .timeline-content h3 {
     font-size: 2.5rem;
     color: var(--text-black-dont-chance);
-    margin: 0 0 15px;
+    margin: 0 0 5px;
     text-transform: uppercase;
 }
 
@@ -1763,8 +1812,9 @@ body.dark_theme #project .item_content:hover {
     body {
         padding: 0;
     }
-    .home {
-        margin-top: 20rem;
+    #home.home {
+        /* margin-top: 20rem; */
+        display: block;
     }
     #menu-bars {
         display: initial;
@@ -1782,6 +1832,7 @@ body.dark_theme #project .item_content:hover {
     header .navbar-left a {
         font-size: 1.5rem;
         padding: 1rem 0;
+        padding-left: 15rem;
         text-transform: capitalize;
     }
     header .follow a {
@@ -1809,6 +1860,7 @@ body.dark_theme #project .item_content:hover {
     }
     .clound {
         height: 8rem;
+        top: -6.5rem;
     }
     .clound .clound-left {
         top: -2rem;
@@ -1890,6 +1942,7 @@ body.dark_theme #project .item_content:hover {
         position: absolute;
         /* top: -3rem; */
         right: 5rem;
+        display: none;
         transform: rotate( 315deg);
     }
     .home .dc2 {
@@ -1970,7 +2023,7 @@ body.dark_theme #project .item_content:hover {
     }
 }
 
-@media (max-width:730px) {
+@media (max-width:760px) {
     #favorite .fav_right .bg__fav__cover {
         margin-right: 0;
         right: 0;
@@ -2033,6 +2086,12 @@ body.dark_theme #project .item_content:hover {
 @media (max-width:450px) {
     header {
         width: 100%;
+    }
+    .clound {
+        top: -2.5rem;
+    }
+    .home .content {
+        margin-top: 3rem;
     }
     .experience .box-container .box {
         padding-right: 0;

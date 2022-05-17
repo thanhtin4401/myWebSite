@@ -1,6 +1,39 @@
 let menu = document.querySelector('#menu-bars');
 let header = document.querySelector('header');
 
+const menuItem = document.querySelectorAll('header nav a');
+const sections = document.querySelectorAll('section');
+
+window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= sectionTop) {
+            current = section.getAttribute('id');
+        }
+    })
+    // console.log(current);
+    menuItem.forEach(a => {
+        a.classList.remove('activeNAV');
+        if (a.classList.contains(current)) {
+            a.classList.add('activeNAV');
+        }
+    })
+
+})
+
+
+
+function activeItemNav() {
+    menuItem.forEach((item) =>
+        item.classList.remove('activeNAV'));
+    this.classList.add('activeNAV');
+}
+
+
+menuItem.forEach((item) =>
+    item.addEventListener('click', activeItemNav));
 
 menu.onclick = () => {
     menu.classList.toggle('fa-times');
