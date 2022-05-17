@@ -1271,6 +1271,7 @@ body.dark_theme #experience .timeline-date {
 
 #project .item_content img {
     border-radius: 50px;
+    width: 100%;
 }
 
 #project .item_content .title {
@@ -1278,6 +1279,10 @@ body.dark_theme #experience .timeline-date {
     margin-top: 2rem;
     border-radius: 16px;
     border-top-color: var(--white-color);
+}
+
+#project .item_content .title p {
+    font-size: 1.5rem;
 }
 
 #project .btn__container {
