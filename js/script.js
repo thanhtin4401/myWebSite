@@ -132,8 +132,8 @@ $(document).ready(function () {
 
             },
         },],
-        autoplay: true,
-        autoplaySpeed: 1000,
+        // autoplay: true,
+        // autoplaySpeed: 1000,
     });
 });
 
@@ -164,7 +164,7 @@ checkboxDarkMode.addEventListener('click', () => {
         <img class="animate__animated animate__fadeInRight clound-right animate__delay-1s" src="https://res.cloudinary.com/dvzingci9/image/upload/v1652513746/My-portfolio/clound-moon_peb6rn.png" alt="">`
 
         // inmg home
-        document.querySelector('#home .image').innerHTML = ` <img src="https://res.cloudinary.com/dvzingci9/image/upload/v1652689481/My-portfolio/me_attdm8_jjqfny.png" alt="" class="front-img">
+        document.querySelector('#home .image').innerHTML = ` <img src="https://res.cloudinary.com/dvzingci9/image/upload/v1652851267/My-portfolio/me_attdm8_jjqfny_optimized_isuewp.png" alt="" class="front-img">
         <img src="https://res.cloudinary.com/dvzingci9/image/upload/v1652448395/My-portfolio/dc1-dark_wzz4e6.png" alt="" class="dc1">
         <img src="https://res.cloudinary.com/dvzingci9/image/upload/v1652448395/My-portfolio/dc2-dark_yxecil.png" alt="" class="dc2">
         <img src="https://res.cloudinary.com/dvzingci9/image/upload/v1652448395/My-portfolio/dc2-dark_yxecil.png" alt="" class="dc3">`
@@ -173,7 +173,7 @@ checkboxDarkMode.addEventListener('click', () => {
         document.querySelector('.skill .skill-container img').src = "https://res.cloudinary.com/dvzingci9/image/upload/v1652458965/My-portfolio/picVAP-dark_qeqodg.png";
 
         // imgage about me
-        document.querySelector('.about .row-1 .image img').src = "https://res.cloudinary.com/dvzingci9/image/upload/v1652514105/My-portfolio/img_about_ucs7pd.jpg";
+        document.querySelector('.about .row-1 .image img').src = "https://res.cloudinary.com/dvzingci9/image/upload/v1652851269/My-portfolio/img_about_ucs7pd_optimized_rjusfe.jpg";
 
         // about taget
         document.querySelector('.about .row-1 .content img').src = "https://res.cloudinary.com/dvzingci9/image/upload/v1652448395/My-portfolio/dc2-dark_yxecil.png";
@@ -192,8 +192,8 @@ checkboxDarkMode.addEventListener('click', () => {
         document.querySelector('.logo img').src = "https://res.cloudinary.com/dvzingci9/image/upload/v1652300899/My-portfolio/logo__black_n1pscg.png"
 
         // clound
-        document.querySelector('.clound').innerHTML = `  <img class="animate__animated animate__fadeInLeft clound-left animate__delay-1s" src="https://res.cloudinary.com/dvzingci9/image/upload/v1652802792/My-portfolio/clound-left_optimized_xjoubm.png" alt="">
-        <img class="animate__animated animate__fadeInRight clound-right animate__delay-1s" src="https://res.cloudinary.com/dvzingci9/image/upload/v1652802792/My-portfolio/clound-right_optimized_riwik8.png" alt="">
+        document.querySelector('.clound').innerHTML = `  <img class="animate__animated animate__fadeInLeft clound-left animate__delay-1s" src="https://res.cloudinary.com/dvzingci9/image/upload/v1652852065/My-portfolio/clound-moon-left_jaocus_optimized_dmjzjr.png" alt="">
+        <img class="animate__animated animate__fadeInRight clound-right animate__delay-1s" src="https://res.cloudinary.com/dvzingci9/image/upload/v1652852066/My-portfolio/clound-moon_peb6rn_optimized_hzeqz3.png" alt="">
 `
 
         // inmg home
@@ -207,7 +207,7 @@ checkboxDarkMode.addEventListener('click', () => {
         document.querySelector('.skill .skill-container img').src = "https://res.cloudinary.com/dvzingci9/image/upload/v1652300903/My-portfolio/picVAP_m0q8ij.png";
 
         // imgage about me
-        document.querySelector('.about .row-1 .image img').src = "https://res.cloudinary.com/dvzingci9/image/upload/v1652300907/My-portfolio/img__infor_cj1ncf.jpg";
+        document.querySelector('.about .row-1 .image img').src = "https://res.cloudinary.com/dvzingci9/image/upload/v1652851269/My-portfolio/img__infor_optimized_optimized_optimized_iqzszn.jpg";
 
         // about taget
         document.querySelector('.about .row-1 .content img').src = "https://res.cloudinary.com/dvzingci9/image/upload/v1652300891/My-portfolio/dc2_wquo4x.png";

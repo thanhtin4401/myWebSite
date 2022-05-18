@@ -36,6 +36,7 @@
 
 * {
     font-family: 'Roboto', sans-serif;
+    font-display: fallback;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -1313,6 +1314,10 @@ body.dark_theme #experience .timeline-date {
     animation: 10s ease-out;
 }
 
+#project .btnSourceCode i {
+    line-height: 3.8rem;
+}
+
 #project .item_content .title h5 {
     font-size: 2rem;
     color: var(--text-black-color-bold)
@@ -1571,7 +1576,7 @@ body.dark_theme #project .item_content:hover {
 
 .video__countryside {
     width: 100%;
-    background-image: url(https://res.cloudinary.com/dvzingci9/image/upload/v1652302958/My-portfolio/bg_video_r60ewb.png);
+    background-image: url(https://res.cloudinary.com/dvzingci9/image/upload/v1652845854/My-portfolio/bg_video_optimized_wsuecy.png);
     background-size: cover;
     /* giúp cho bakcgroun-img không scroll theo */
     background-attachment: fixed;
