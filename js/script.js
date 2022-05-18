@@ -157,7 +157,7 @@ checkboxDarkMode.addEventListener('click', () => {
 
 
         // logo
-        document.querySelector('.logo img').src = "https://res.cloudinary.com/dvzingci9/image/upload/v1652457922/My-portfolio/logo__white_xpnszp.png"
+        document.querySelector('.logo img').src = "https://res.cloudinary.com/dvzingci9/image/upload/v1652856379/My-portfolio/logo__white_optimized_eb5pqt.png"
 
         // clound
         document.querySelector('.clound').innerHTML = ` <img class="animate__animated animate__fadeInLeft clound-left animate__delay-1s" src="https://res.cloudinary.com/dvzingci9/image/upload/v1652513746/My-portfolio/clound-moon-left_jaocus.png" alt="">
@@ -165,9 +165,9 @@ checkboxDarkMode.addEventListener('click', () => {
 
         // inmg home
         document.querySelector('#home .image').innerHTML = ` <img src="https://res.cloudinary.com/dvzingci9/image/upload/v1652851267/My-portfolio/me_attdm8_jjqfny_optimized_isuewp.png" alt="" class="front-img">
-        <img src="https://res.cloudinary.com/dvzingci9/image/upload/v1652448395/My-portfolio/dc1-dark_wzz4e6.png" alt="" class="dc1">
-        <img src="https://res.cloudinary.com/dvzingci9/image/upload/v1652448395/My-portfolio/dc2-dark_yxecil.png" alt="" class="dc2">
-        <img src="https://res.cloudinary.com/dvzingci9/image/upload/v1652448395/My-portfolio/dc2-dark_yxecil.png" alt="" class="dc3">`
+        <img src="https://res.cloudinary.com/dvzingci9/image/upload/v1652845805/My-portfolio/dc1-dark_optimized_etjlg4.png" alt="" class="dc1">
+        <img src="https://res.cloudinary.com/dvzingci9/image/upload/v1652845802/My-portfolio/dc2-dark_optimized_bi839d.png" alt="" class="dc2">
+        <img src="https://res.cloudinary.com/dvzingci9/image/upload/v1652845802/My-portfolio/dc2-dark_optimized_bi839d.png" alt="" class="dc3">`
 
         // circle
         document.querySelector('.skill .skill-container img').src = "https://res.cloudinary.com/dvzingci9/image/upload/v1652458965/My-portfolio/picVAP-dark_qeqodg.png";
@@ -176,7 +176,7 @@ checkboxDarkMode.addEventListener('click', () => {
         document.querySelector('.about .row-1 .image img').src = "https://res.cloudinary.com/dvzingci9/image/upload/v1652851269/My-portfolio/img_about_ucs7pd_optimized_rjusfe.jpg";
 
         // about taget
-        document.querySelector('.about .row-1 .content img').src = "https://res.cloudinary.com/dvzingci9/image/upload/v1652448395/My-portfolio/dc2-dark_yxecil.png";
+        document.querySelector('.about .row-1 .content img').src = "https://res.cloudinary.com/dvzingci9/image/upload/v1652845802/My-portfolio/dc2-dark_optimized_bi839d.png";
 
         // project-border-left
         document.querySelector('.project__border__left').src = "https://res.cloudinary.com/dvzingci9/image/upload/v1652450175/My-portfolio/project-dark_uq99k2.png";
@@ -189,11 +189,11 @@ checkboxDarkMode.addEventListener('click', () => {
         document.body.classList.remove("dark_theme");
 
         // logo
-        document.querySelector('.logo img').src = "https://res.cloudinary.com/dvzingci9/image/upload/v1652300899/My-portfolio/logo__black_n1pscg.png"
+        document.querySelector('.logo img').src = "https://res.cloudinary.com/dvzingci9/image/upload/v1652856363/My-portfolio/logo__black_optimized_mzimiv.png"
 
         // clound
-        document.querySelector('.clound').innerHTML = `  <img class="animate__animated animate__fadeInLeft clound-left animate__delay-1s" src="https://res.cloudinary.com/dvzingci9/image/upload/v1652852065/My-portfolio/clound-moon-left_jaocus_optimized_dmjzjr.png" alt="">
-        <img class="animate__animated animate__fadeInRight clound-right animate__delay-1s" src="https://res.cloudinary.com/dvzingci9/image/upload/v1652852066/My-portfolio/clound-moon_peb6rn_optimized_hzeqz3.png" alt="">
+        document.querySelector('.clound').innerHTML = `  <img class="animate__animated animate__fadeInLeft clound-left animate__delay-1s" src="https://res.cloudinary.com/dvzingci9/image/upload/v1652802792/My-portfolio/clound-left_optimized_xjoubm.png" alt="">
+        <img class="animate__animated animate__fadeInRight clound-right animate__delay-1s" src="https://res.cloudinary.com/dvzingci9/image/upload/v1652802792/My-portfolio/clound-right_optimized_riwik8.png" alt="">
 `
 
         // inmg home
@@ -217,7 +217,7 @@ checkboxDarkMode.addEventListener('click', () => {
         document.querySelector('.project__border__left').src = "https://res.cloudinary.com/dvzingci9/image/upload/v1652300902/My-portfolio/project_border_ofqone.png";
 
         // bg__fav__cover
-        document.querySelector('.bg__fav__cover').src = "https://res.cloudinary.com/dvzingci9/image/upload/v1652300886/My-portfolio/bg_fav_cover_lic1zw.png";
+        document.querySelector('.bg__fav__cover').src = "https://res.cloudinary.com/dvzingci9/image/upload/v1652856357/My-portfolio/bg_fav_cover_optimized_z38zzf.png";
 
     }
 })
