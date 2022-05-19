@@ -8,7 +8,8 @@
     --text-black-color-bold: #121212;
     --black-color: #121212;
     --white-color: white;
-    --text-black-color-normal: #3e3e3e;
+    --text-black-color-normal: #2b2b2b;
+    ;
     --background-yellow-color: #fbda68;
     --border-gray-color: #666666;
     --border-black-color: black;
@@ -448,6 +449,31 @@ header .icon-sun {
     background: var(--background-gradient);
 }
 
+#home .dot {
+    height: 16px;
+    width: 16px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    position: absolute;
+    /* top: 10px; */
+    /* left: calc(50% - 8px); */
+    border: 0.2rem solid var(--text-black-color-normal);
+}
+
+#home .square_1 {
+    width: 100px;
+    height: 2px;
+    background: black;
+    position: absolute;
+}
+
+#home .square_2 {
+    width: 100px;
+    height: 2px;
+    background: black;
+    position: absolute;
+}
+
 body.dark_theme .home {
     background-image: url(https://res.cloudinary.com/dvzingci9/image/upload/v1652450173/My-portfolio/bg14-dark_uwwzsx.png);
 }
@@ -463,7 +489,7 @@ body.dark_theme .home {
     width: 85%;
     object-fit: contain;
     animation: moveing 3s infinite;
-    /* visibility: hidden; */
+    visibility: hidden;
     /* position: absolute;
     top: 0; */
 }
@@ -494,7 +520,8 @@ body.dark_theme .home {
     right: 13rem;
 }
 
-.home .image:hover .front-img {
+
+/* .home .image:hover .front-img {
     width: 75%;
     object-fit: contain;
 }
@@ -509,7 +536,7 @@ body.dark_theme .home {
 
 .home .image:hover .dc3 {
     right: 10rem;
-}
+} */
 
 
 /* .home .image .front-img:hover {
@@ -532,12 +559,44 @@ body.dark_theme .home {
     font-size: 4.5rem;
     color: var(--text-black-color-bold);
     text-transform: uppercase;
+    font-weight: 600;
 }
 
 .home .content h3 span {
-    color: var(--background-yellow-color);
+    color: transparent;
     text-transform: uppercase;
+    position: relative;
+    /* line-height: 1rem; */
+    -webkit-text-stroke: 1px var(--text-black-color-bold);
 }
+
+.home .content h3 span::before {
+    content: attr(data-text);
+    position: absolute;
+    color: var(--text-yellow-color);
+    height: 6rem;
+    overflow: hidden;
+    width: 0;
+    /* left: -10px; */
+    transition: 0.5s;
+    border-right: 6px solid var(--text-yellow-color);
+    -webkit-text-stroke: 1px var(--text-yellow-color);
+    animation: paintName 2.5s ease-in-out infinite;
+    /* transition: paintName 2.5s ease-in-out infinite; */
+    /* animation-iteration-count: 3; */
+    animation-delay: 2s;
+}
+
+
+/* .home .content h3 span:hover::before {
+    width: 104%;
+} */
+
+
+/* 
+.home .content h3 span:hover::before {
+    width: 100%;
+} */
 
 .home .content .info {
     font-size: 3.5rem;
@@ -806,7 +865,8 @@ body.dark_theme .home {
     transform: rotate( 179deg);
 }
 
-.skill .skill__item.active .btn__explore:hover {
+
+/* .skill .skill__item.active .btn__explore:hover {
     transform: translateY(-1rem);
     background: var;
 }
@@ -815,7 +875,7 @@ body.dark_theme .home {
     transform: translateY(-0.3rem);
     color: var(--white-color);
     transform: rotate( 179deg);
-}
+} */
 
 .skill .explore__content {
     padding: 1rem 0;
@@ -1139,6 +1199,33 @@ body.dark_theme .home {
     position: relative;
 }
 
+#experience .timeline-items .btnViewPage {
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding: 0.8rem;
+    font-size: 1.5rem;
+    border-radius: 4rem;
+    color: rgb(110, 108, 100);
+    text-decoration: none;
+    background-color: transparent;
+    border: 0.2rem dashed rgb(110, 108, 100);
+    ;
+    margin-top: 2rem;
+    animation: 10s ease-out;
+}
+
+#experience .timeline-items .btnViewPage:hover {
+    /* font-weight: 600; */
+    letter-spacing: 0.2rem;
+    color: var(--black-color);
+    border: 0.2rem dashed var(--border-black-color)
+}
+
+#experience .timeline-items .btnViewPage i {
+    margin-right: 1rem;
+}
+
 #experience .timeline-items::before {
     content: "";
     position: absolute;
@@ -1212,6 +1299,10 @@ body.dark_theme #experience .timeline-date {
     padding: 30px;
     border-radius: 5px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+#experience .timeline-content video {
+    border-radius: 5px;
 }
 
 #experience .timeline-content h3 {
@@ -1415,7 +1506,7 @@ body.dark_theme #project .item_content:hover {
 
 #design h2:first-of-type {
     font-size: 4rem;
-    color: white;
+    color: var(--text-black-color-bold);
 }
 
 #design span:first-of-type {
@@ -1424,7 +1515,7 @@ body.dark_theme #project .item_content:hover {
     width: 40rem;
     height: 0.4rem;
     border-radius: 8rem;
-    background: white;
+    background: var(--text-black-color-bold);
     margin-bottom: 2rem;
 }
 
@@ -1591,6 +1682,7 @@ body.dark_theme #project .item_content:hover {
     width: 100%;
     object-fit: cover;
     border: none;
+    border-radius: 5px;
     box-shadow: 0 2px 10px 1px rgb(0 0 0 / 50%);
     outline: none;
 }
@@ -1823,7 +1915,7 @@ body.dark_theme #project .item_content:hover {
     header .follow a:hover {
         color: var(--main-color);
     }
-    .home .image:hover .front-img {
+    /* .home .image:hover .front-img {
         width: 75%;
         object-fit: contain;
     }
@@ -1834,8 +1926,8 @@ body.dark_theme #project .item_content:hover {
         left: -4rem;
     }
     .home .image:hover .dc3 {
-        right: 10rem;
-    }
+        right: 10rem; */
+    /* } */
     .skill .btn__explore:hover {
         transform: translateY(1rem);
         background: var;
@@ -1974,7 +2066,7 @@ body.dark_theme #project .item_content:hover {
     header .navbar-left a {
         font-size: 1.5rem;
         padding: 1rem 0;
-        padding-left: 15rem;
+        padding-left: 9rem;
         text-transform: capitalize;
     }
     header .follow a {
@@ -1993,7 +2085,7 @@ body.dark_theme #project .item_content:hover {
         width: 10rem;
         height: 0.4rem;
         border-radius: 8rem;
-        background: gray;
+        background: var(--text-black-color-bold);
         margin-bottom: 2rem;
     }
     .cursor-1,
@@ -2128,6 +2220,10 @@ body.dark_theme #project .item_content:hover {
     #experience .box-video-experience {
         height: 100%;
     }
+    #experience .timeline-items .btnViewPage {
+        color: var(--text-black-color-bold);
+        border-color: var(--text-black-color-bold);
+    }
     #SAL .SAL__container {
         display: block;
     }
@@ -2229,6 +2325,9 @@ body.dark_theme #project .item_content:hover {
     header {
         width: 100%;
     }
+    header .navbar-left a {
+        padding-left: 15rem;
+    }
     .clound {
         top: -2.5rem;
     }
@@ -2311,6 +2410,27 @@ body.dark_theme #project .item_content:hover {
     100% {
         transform: rotate( 180deg);
     }
+}
+
+@keyframes paintName {
+    0% {
+        width: 0%;
+        filter: drop-shadow(0 0 25px var(--text-yellow-color));
+    }
+    50% {
+        width: 106%;
+        filter: drop-shadow(0 0 25px var(--text-yellow-color));
+    }
+    100% {
+        width: 0%;
+        filter: drop-shadow(0 0 25px var(--text-yellow-color));
+    }
+    /* from {
+        width: 0;
+    }
+    to {
+        width: 104%;
+    } */
 }
 
 
