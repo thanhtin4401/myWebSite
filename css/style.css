@@ -14,6 +14,7 @@
     --border-gray-color: #666666;
     --border-black-color: black;
     --text-black-dont-chance: black;
+    --zalo-chat-color: #0162F2
     /* --background-yellow-blod:#ffc107; */
 }
 
@@ -24,6 +25,7 @@
     --body-color: #292929;
     --background-gradient: linear-gradient(90deg, #292929ef 38%, #00d4ff00 100%);
     --main-color: #1F1F1F;
+    --zalo-chat-color: #fbda68;
     --text-yellow-color: #fbda68;
     --text-black-color-bold: white;
     --black-color: white;
@@ -2464,8 +2466,11 @@ body.dark_theme #project .item_content:hover {
 }
 
 .fcta-zalo-ben-trong-nut svg path {
+    margin-bottom: 1rem;
     fill: #fff
 }
+
+.fcta-zalo-tracking svg {}
 
 .fcta-zalo-vi-tri-nut {
     position: fixed;
@@ -2484,7 +2489,7 @@ div.fcta-zalo-mess {
     height: 50px;
     text-align: center;
     color: #fff;
-    background: var(--text-yellow-color);
+    background: var(--zalo-chat-color);
     border-radius: 50%;
     position: relative
 }
@@ -2493,8 +2498,8 @@ div.fcta-zalo-mess {
 .fcta-zalo-nen-nut::before {
     content: "";
     position: absolute;
-    border: 1px solid var(--text-yellow-color);
-    background: var(--text-yellow-color);
+    border: 1px solid var(--zalo-chat-color);
+    background: var(--zalo-chat-color);
     z-index: -1;
     left: -20px;
     right: -20px;
@@ -2519,7 +2524,7 @@ div.fcta-zalo-mess {
     width: 60%;
     height: 60%;
     left: 10px;
-    bottom: 25px;
+    bottom: 30px;
     line-height: 70px;
     font-size: 25px;
     opacity: 1
@@ -2567,14 +2572,14 @@ div.fcta-zalo-mess {
     z-index: 99;
     background: #fff;
     padding: 7px 25px 7px 15px;
-    color: var(--text-yellow-color);
+    color: var(--zalo-chat-color);
     border-radius: 50px 0 0 50px;
     font-weight: 700;
     font-size: 15px
 }
 
 .fcta-zalo-mess span {
-    color: var(--text-yellow-color)!important
+    color: var(--zalo-chat-color)!important
 }
 
 span#fcta-zalo-tracking {
