@@ -50,60 +50,60 @@ let cursor2 = document.querySelector('.cursor-2');
 
 
 // mouse setting
-window.onmousemove = (e) => {
-    cursor1.style.top = e.pageY + 'px';
-    cursor1.style.left = e.pageX + 'px';
-    cursor2.style.top = e.pageY + 'px';
-    cursor2.style.left = e.pageX + 'px';
-}
+// window.onmousemove = (e) => {
+//     cursor1.style.top = e.pageY + 'px';
+//     cursor1.style.left = e.pageX + 'px';
+//     cursor2.style.top = e.pageY + 'px';
+//     cursor2.style.left = e.pageX + 'px';
+// }
 
-document.querySelectorAll('a').forEach(links => {
+// document.querySelectorAll('a').forEach(links => {
 
-    links.onmouseenter = () => {
-        cursor1.classList.add('active');
-        cursor2.classList.add('active');
-    }
+//     links.onmouseenter = () => {
+//         cursor1.classList.add('active');
+//         cursor2.classList.add('active');
+//     }
 
-    links.onmouseleave = () => {
-        cursor1.classList.remove('active');
-        cursor2.classList.remove('active');
-    }
+//     links.onmouseleave = () => {
+//         cursor1.classList.remove('active');
+//         cursor2.classList.remove('active');
+//     }
 
-});
+// });
 
 
 
 // click explore
 
-const ex__skill_1 = document.querySelector(".skill .skill__item_1");
+// const ex__skill_1 = document.querySelector(".skill .skill__item_1");
 
-const ex__skill_2 = document.querySelector(".skill .skill__item_2");
+// const ex__skill_2 = document.querySelector(".skill .skill__item_2");
 
-const ex__skill_3 = document.querySelector(".skill .skill__item_3");
+// const ex__skill_3 = document.querySelector(".skill .skill__item_3");
 
-const ex__btn_1 = document.querySelector(".skill .skill__item_1 .btn__explore");
+// const ex__btn_1 = document.querySelector(".skill .skill__item_1 .btn__explore");
 
-const ex__btn_2 = document.querySelector(".skill .skill__item_2 .btn__explore");
+// const ex__btn_2 = document.querySelector(".skill .skill__item_2 .btn__explore");
 
-const ex__btn_3 = document.querySelector(".skill .skill__item_3 .btn__explore");
-
-
-ex__btn_1.addEventListener('click', () => {
-    ex__skill_1.classList.toggle('active')
+// const ex__btn_3 = document.querySelector(".skill .skill__item_3 .btn__explore");
 
 
-})
-
-ex__btn_2.addEventListener('click', () => {
-    ex__skill_2.classList.toggle('active')
-
-})
-
-ex__btn_3.addEventListener('click', () => {
-    ex__skill_3.classList.toggle('active')
+// ex__btn_1.addEventListener('click', () => {
+//     ex__skill_1.classList.toggle('active')
 
 
-})
+// })
+
+// ex__btn_2.addEventListener('click', () => {
+//     ex__skill_2.classList.toggle('active')
+
+// })
+
+// ex__btn_3.addEventListener('click', () => {
+//     ex__skill_3.classList.toggle('active')
+
+
+// })
 
 
 // pic
