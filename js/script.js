@@ -160,8 +160,8 @@ checkboxDarkMode.addEventListener('click', () => {
         document.querySelector('.logo img').src = "https://res.cloudinary.com/dvzingci9/image/upload/v1652856379/My-portfolio/logo__white_optimized_eb5pqt.png"
 
         // clound
-        document.querySelector('.clound').innerHTML = ` <img class="animate__animated animate__fadeInLeft clound-left animate__delay-1s" src="https://res.cloudinary.com/dvzingci9/image/upload/v1652513746/My-portfolio/clound-moon-left_jaocus.png" alt="">
-        <img class="animate__animated animate__fadeInRight clound-right animate__delay-1s" src="https://res.cloudinary.com/dvzingci9/image/upload/v1652513746/My-portfolio/clound-moon_peb6rn.png" alt="">`
+        document.querySelector('.clound').innerHTML = `<img class="animate__animated animate__fadeInLeft clound-left animate__delay-1s" src="https://res.cloudinary.com/dvzingci9/image/upload/v1652852065/My-portfolio/clound-moon-left_jaocus_optimized_dmjzjr.png" alt="">
+        <img class="animate__animated animate__fadeInRight clound-right animate__delay-1s" src="https://res.cloudinary.com/dvzingci9/image/upload/v1652852066/My-portfolio/clound-moon_peb6rn_optimized_hzeqz3.png" alt="">`
 
         // inmg home
         document.querySelector('#home .image').innerHTML = ` <img src="https://res.cloudinary.com/dvzingci9/image/upload/v1652851267/My-portfolio/me_attdm8_jjqfny_optimized_isuewp.png" alt="" class="front-img">
