@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
 :root {
     --body-color: #fcf2e8;
-    --background-gradient: linear-gradient(90deg, rgba(252, 242, 232, 1) 30%, hsla(190, 100%, 50%, 0) 100%);
+    --background-gradient: linear-gradient(90deg, rgba(252, 242, 232, 1) 31%, rgba(252, 242, 232, 0) 99%);
     --main-color: #fbda68;
     --text-yellow-color: #fbda68;
     --text-black-color-bold: #121212;
@@ -23,7 +23,7 @@
 
 .dark_theme {
     --body-color: #292929;
-    --background-gradient: linear-gradient(90deg, #292929ef 38%, #00d4ff00 100%);
+    --background-gradient: linear-gradient(90deg, rgba(0, 0, 0, 1) 31%, rgba(0, 0, 0, 0) 99%);
     --main-color: #1F1F1F;
     --zalo-chat-color: #fbda68;
     --text-yellow-color: #fbda68;
@@ -448,7 +448,7 @@ header .icon-sun {
     top: 0;
     /* left: 30rem; */
     /* z-index: -1; */
-    /* background: var(--background-gradient); */
+    background: var(--background-gradient);
 }
 
 #home .dot {
