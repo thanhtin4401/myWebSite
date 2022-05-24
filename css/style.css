@@ -1184,6 +1184,106 @@ body.dark_theme .home {
     box-shadow: 0 2px 10px 1px rgb(0 0 0 / 50%);
 } */
 
+
+/* soft skill */
+
+#soft-skills {
+    background-color: var(--main-color);
+    /* min-height: 100vh; */
+}
+
+#soft-skills .soft-skills_items {
+    margin-bottom: 4rem;
+}
+
+#soft-skills h1 {
+    font-size: 4.5rem;
+    margin-bottom: 5rem;
+    color: var(--text-black-color-bold);
+    border-bottom: 0.4rem solid var(--text-black-color-bold);
+    display: inline-block;
+    width: 25rem;
+}
+
+#soft-skills h2 {
+    display: inline-block;
+    font-size: 2.5rem;
+    width: 30%;
+    font-weight: 300;
+    margin-right: 2rem;
+    margin-bottom: 0;
+    color: var(--text-black-color-bold);
+}
+
+#soft-skills .soft-skills__container {
+    display: flex;
+    align-items: center;
+}
+
+#soft-skills .progress-bar {
+    display: inline-block;
+    width: 40%;
+    height: 2rem;
+    text-align: left;
+    overflow: hidden;
+    border: 0.2rem solid var(--text-black-color-bold);
+    background-color: transparent;
+}
+
+#soft-skills .progress {
+    display: inline-block;
+    width: 0;
+    background: var(--text-black-color-bold);
+    height: 2rem;
+    border-radius: 0;
+    /* animation: 20s ease */
+    transition: all 3s ease;
+}
+
+#soft-skills.active .progress.progress__item1 {
+    width: 80%;
+}
+
+#soft-skills.active .progress.progress__item2 {
+    width: 70%;
+}
+
+#soft-skills.active .progress.progress__item3 {
+    width: 80%;
+}
+
+#soft-skills.active .progress.progress__item4 {
+    width: 85%;
+}
+
+#progress__item1 {
+    width: 80%;
+}
+
+#progress__item2 {
+    width: 70%;
+}
+
+#progress__item3 {
+    width: 80%;
+}
+
+#progress__item4 {
+    width: 85%;
+}
+
+#soft-skills .percent {
+    display: inline;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    line-height: 1;
+    margin-left: 2rem;
+    color: var(--text-black-color-bold);
+}
+
+
+/* soft skill end */
+
 #experience {
     min-height: 100vh;
 }
@@ -1191,7 +1291,7 @@ body.dark_theme .home {
 #experience h1 {
     text-align: center;
     font-size: 4.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     color: var(--text-black-color-bold);
 }
 
@@ -1495,7 +1595,7 @@ body.dark_theme #project .item_content:hover {
 /* design demo */
 
 #design {
-    background-color: var(--main-color);
+    /* background-color: var(--main-color); */
 }
 
 #design .image-slider {
@@ -2323,6 +2423,17 @@ body.dark_theme #project .item_content:hover {
         left: 7px;
         margin-top: 2rem;
     }
+    #soft-skills .soft-skills__container {
+        display: block;
+        margin-bottom: 3rem;
+    }
+    #soft-skills h2 {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    #soft-skills .progress-bar {
+        width: 70%;
+    }
 }
 
 @media (max-width:450px) {
@@ -2355,7 +2466,7 @@ body.dark_theme #project .item_content:hover {
         font-size: 4rem;
     }
     #experience h1 {
-        font-size: 6rem;
+        font-size: 4.5rem;
     }
     .favorite {
         padding-top: 3rem;
