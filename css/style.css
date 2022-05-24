@@ -102,6 +102,54 @@ body::-webkit-scrollbar-track {
     background: black;
 }
 
+.box1.loading {
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+    position: fixed;
+    left: 0;
+    height: 100vh;
+    width: 34%;
+    background-color: var(--main-color);
+    border-right: 2rem solid black;
+    box-shadow: rgb(0 0 0 / 97%) 0px 1px 20px, rgb(0 0 0 / 23%) 50px 60px 60px;
+    text-align: center;
+    font-size: 40rem;
+    font-weight: 600;
+    z-index: 10003;
+}
+
+.box2.loading {
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    position: fixed;
+    left: 32%;
+    height: 100vh;
+    width: 34%;
+    background-color: var(--main-color);
+    border-right: 2rem solid black;
+    box-shadow: rgb(0 0 0 / 97%) 0px 1px 20px, rgb(0 0 0 / 23%) 50px 60px 60px;
+    text-align: center;
+    font-size: 40rem;
+    font-weight: 600;
+    z-index: 10002;
+}
+
+.box3.loading {
+    animation-duration: 2s;
+    animation-delay: 0s;
+    position: fixed;
+    left: 66%;
+    height: 100vh;
+    width: 34%;
+    background-color: var(--main-color);
+    border-right: 2rem solid black;
+    box-shadow: rgb(0 0 0 / 97%) 0px 1px 20px, rgb(0 0 0 / 23%) 50px 60px 60px;
+    text-align: center;
+    font-size: 40rem;
+    font-weight: 600;
+    z-index: 10001;
+}
+
 .btns {
     display: inline-block;
     border: .2rem solid #6e6c64;
@@ -446,7 +494,7 @@ header .icon-sun {
     height: 100%;
     position: absolute;
     top: 0;
-    /* left: 30rem; */
+    left: 0;
     /* z-index: -1; */
     background: var(--background-gradient);
 }
@@ -2131,6 +2179,15 @@ body.dark_theme #project .item_content:hover {
         width: 9%;
         top: 2rem;
         right: 2rem;
+    }
+    .box1.loading {
+        display: none;
+    }
+    .box1.loading {
+        display: none;
+    }
+    .box1.loading {
+        display: none;
     }
 }
 
