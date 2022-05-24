@@ -448,7 +448,7 @@ header .icon-sun {
     top: 0;
     /* left: 30rem; */
     /* z-index: -1; */
-    background: var(--background-gradient);
+    /* background: var(--background-gradient); */
 }
 
 #home .dot {
@@ -1593,10 +1593,6 @@ body.dark_theme #project .item_content:hover {
 
 
 /* design demo */
-
-#design {
-    /* background-color: var(--main-color); */
-}
 
 #design .image-slider {
     width: 100%;
