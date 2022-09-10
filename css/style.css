@@ -276,7 +276,7 @@ header .navbar-left a:hover {
 header .navbar-left a.activeNAV {
     letter-spacing: .2rem;
     font-weight: 600;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
     color: var(--main-color);
     background: var(--body-color);
     border-top-left-radius: 8rem;
@@ -1787,11 +1787,24 @@ body.dark_theme #project .item_content:hover {
     color: var(--text-black-color-bold);
 }
 
+.VK__container {
+    border: 0.3rem dashed var(--border-black-color);
+    border-radius: 1rem;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-right: 1rem;
+    padding: 1rem;
+}
 
-/* #SAL .SAL__item:hover {
-    transform: translateY(-3rem);
-    box-shadow: 0 2px 10px 1px rgb(0 0 0 / 50%);
-} */
+.VK__item {
+    width: 9rem;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+}
 
 
 /* end SAL */
